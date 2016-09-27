@@ -13,7 +13,10 @@
 <script type="text/javascript">
 	$(function(){
 		$("#asdf").click(function(){
-			$("body").css("color","red");
+			if($("body").css("color")=="green")
+				$("body").css("color","red");
+			else
+				$("body").css("color","green");
 		});
 	})
 	

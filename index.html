@@ -8,13 +8,12 @@
 </head>
 <body>
 	hello world!
+	<button id="asdf">点击变色</button>
 </body>
 <script type="text/javascript">
 	$(function(){
-		var a = 1;
-		$("body").click(function(){
-			alert(a)
-			a++;
+		$("#asdf").click(function(){
+			$("body").css("color","red");
 		});
 	})
 	

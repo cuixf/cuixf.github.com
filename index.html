@@ -8,16 +8,16 @@
 </head>
 <body>
 	hello world!
-	<button class="bianse">点击变色</button>
-	<button class="bianse bians">点击变色2</button>
+	<button class="bianse">触发click</button>
+	<button class="bians">触发弹窗</button>
 </body>
 <script type="text/javascript">
 	$(function(){
-		$(".bianse").on("click.bians",function(){
-			if($("body").css("color")=="green")
-				$("body").css("color","red");
-			else
-				$("body").css("color","green");
+		$(".bianse").on("click",function(){
+			$(".bians").click();
+		});
+		$(".bians").on("click",function(){
+			alert(1);
 		});
 	})
 	
